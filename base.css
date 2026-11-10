@@ -1,0 +1,230 @@
+/* ==========================================================================
+   BASE  —  reset, tipografi, tombol, formulir, kartu, tabel, tag
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.5 Poppins, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--primary);
+}
+
+a,
+.lk {
+  color: var(--link);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.mu {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ---------- Tombol ---------- */
+.btn {
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.btn.o {                                  /* outline */
+  background: transparent;
+  color: var(--link);
+  border: 1px solid var(--link);
+}
+
+.btn.d {                                  /* danger */
+  background: transparent;
+  color: var(--er);
+  border: 1px solid var(--er);
+}
+
+.btn.s {                                  /* small */
+  padding: 4px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* ---------- Kartu ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+/* ---------- Formulir ---------- */
+.f {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.in {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: var(--bg);
+}
+
+.in:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(245, 184, 0, 0.25);
+}
+
+.in input,
+.in select,
+.in textarea {
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 9px 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.in svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--muted);
+  fill: none;
+  stroke-width: 1.8;
+  flex: none;
+}
+
+.eye {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  background: var(--bg);
+  width: 100%;
+}
+
+.hint {
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--gold-100);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hint {
+    background: var(--primary-soft);
+  }
+}
+
+/* ---------- Tabel ---------- */
+.tw {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+/* ---------- Tag / lencana status ---------- */
+.tag {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 1px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--primary-soft);
+  color: var(--link);
+}
+
+.tag.ok { background: rgba(22, 138, 74, 0.12); color: var(--ok); }
+.tag.wn { background: rgba(245, 184, 0, 0.22); color: var(--wn); }
+.tag.er { background: rgba(192, 57, 43, 0.12); color: var(--er); }
+
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  z-index: 9;
+}
+
+body{
+  background:
+    radial-gradient(circle at 10% 15%, #f5b80040 0, transparent 38%),
+    radial-gradient(circle at 92% 88%, #5b2a8645 0, transparent 42%),
+    linear-gradient(135deg, #501e85 0%, #501e85 100%);
+  background-attachment:fixed;
+}

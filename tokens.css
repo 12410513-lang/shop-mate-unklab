@@ -1,0 +1,56 @@
+/* ==========================================================================
+   TOKEN WARNA & VARIABEL  —  tema Universitas Klabat (Ungu + Kuning/Emas)
+   --------------------------------------------------------------------------
+   Ingin mengubah warna seluruh aplikasi? Cukup edit file ini.
+   ========================================================================== */
+
+:root {
+  /* --- Warna merek --- */
+  --purple-900: #2a1048;   /* sangat gelap: sidebar, header gelap, toast */
+  --purple-700: #3f1a63;   /* gelap: gradasi hero, teks angka statistik  */
+  --purple-600: #5b2a86;   /* UTAMA: tombol, avatar, chip aktif          */
+  --purple-100: #f1e9fa;   /* lembut: latar tag, hover, panel info       */
+
+  --gold-500: #f5b800;     /* AKSEN: menu aktif, garis hiasan, ikon logo */
+  --gold-400: #ffd34d;     /* aksen terang (di atas latar gelap)         */
+  --gold-700: #8a6200;     /* teks emas di atas latar terang             */
+  --gold-100: #fff4cc;     /* latar lembut emas                          */
+
+  /* --- Peran warna (dipakai oleh komponen) --- */
+  --primary:      var(--purple-600);   /* latar tombol utama           */
+  --primary-dark: var(--purple-900);   /* latar gelap (sidebar, topbar) */
+  --primary-soft: var(--purple-100);   /* latar lembut                  */
+  --link:         var(--purple-600);   /* teks tautan, harga, border aktif */
+  --accent:       var(--gold-500);
+  --on-accent:    var(--purple-900);   /* teks di atas warna emas       */
+
+  /* --- Permukaan & teks --- */
+  --bg:    #faf7fd;
+  --card:  #ffffff;
+  --text:  #241636;
+  --muted: #6f6384;
+  --line:  #e6dcf2;
+
+  /* --- Status --- */
+  --ok:  #168a4a;
+  --wn:  var(--gold-700);
+  --er:  #c0392b;
+
+  /* --- Bayangan --- */
+  --shadow: 0 1px 3px rgba(42, 16, 72, 0.08);
+}
+
+/* Mode gelap otomatis mengikuti pengaturan perangkat */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary:      #8a4fd1;
+    --primary-soft: #2b1946;
+    --link:         #c9a6f5;
+    --bg:           #150b24;
+    --card:         #1f1233;
+    --text:         #f3ecfb;
+    --muted:        #b2a5c9;
+    --line:         #37244f;
+    --wn:           var(--gold-400);
+  }
+}

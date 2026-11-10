@@ -1,0 +1,11 @@
+/* ==========================================================================
+   ADMIN  —  kelola pengguna, produk, kategori, transaksi
+   Sebagian besar tampilan memakai komponen bersama (tabel, kartu, tag).
+   Gaya khusus Administrator ditambahkan di sini.
+   ========================================================================== */
+
+.admin-actions {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}

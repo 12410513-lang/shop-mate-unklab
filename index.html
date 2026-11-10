@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5b2a86">
+  <title>Shop-Mate UNKLAB</title>
+
+  <!-- ===== CSS (urutan: token → dasar → komponen → layout → per peran) ===== -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/buyer.css">
+  <link rel="stylesheet" href="css/seller.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div id="app" class="stage"></div>
+
+  <!-- ===== JavaScript (urutan MUTLAK: core → shared → peran → router → main) ===== -->
+
+  <!-- Inti: data, state, utilitas -->
+  <script src="js/core/data.js"></script>
+  <script src="js/core/state.js"></script>
+  <script src="js/core/utils.js"></script>
+
+  <!-- Bersama: dipakai semua peran -->
+  <script src="js/shared/icons.js"></script>
+  <script src="js/shared/logo.js"></script>
+  <script src="js/shared/components.js"></script>
+  <script src="js/shared/notifications.js"></script>
+  <script src="js/shared/profile.js"></script>
+
+  <!-- Auth: login & daftar -->
+  <script src="js/auth/auth.js"></script>
+
+  <!-- Pembeli -->
+  <script src="js/buyer/buyer.helpers.js"></script>
+  <script src="js/buyer/buyer.pages.js"></script>
+  <script src="js/buyer/buyer.actions.js"></script>
+
+  <!-- Penjual -->
+  <script src="js/seller/seller.helpers.js"></script>
+  <script src="js/seller/seller.pages.js"></script>
+  <script src="js/seller/seller.actions.js"></script>
+
+  <!-- Administrator -->
+  <script src="js/admin/admin.helpers.js"></script>
+  <script src="js/admin/admin.pages.js"></script>
+  <script src="js/admin/admin.actions.js"></script>
+
+  <!-- Router (menggabungkan semua halaman) & start -->
+  <script src="js/core/router.js"></script>
+  <script src="js/core/main.js"></script>
+</body>
+</html>

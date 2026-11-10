@@ -1,0 +1,135 @@
+/* ==========================================================================
+   AUTH  —  halaman Login & Daftar
+   ========================================================================== */
+
+.auth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.auth .art {
+  /* Foto kampus + lapisan ungu transparan agar teks tetap terbaca */
+  background:
+    linear-gradient(180deg, rgba(42, 16, 72, 0.55) 0%, rgba(42, 16, 72, 0.25) 40%, rgba(42, 16, 72, 0.92) 100%),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNHBZPqKradd2qnFFFzBquO2tBah33B3-yWjaKMQx1o62tGMhUtwmnAPD&s=10") center / cover no-repeat,
+    var(--purple-900);
+  color: #fff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid var(--accent);
+}
+
+.auth .art h2 {
+  position: relative;
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.auth .art p {
+  position: relative;
+  margin: 0;
+  opacity: 0.88;
+}
+
+.auth form {
+  padding: 32px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* ---------- Panel pilih jenis pengguna (welcome) ---------- */
+.auth-panel {
+  padding: 32px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  background: var(--bg);
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.choice:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.choice__icon {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--primary);
+  border-bottom: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice__icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.choice__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice__text b {
+  font-size: 16px;
+}
+
+/* ---------- Judul formulir + lencana jenis pengguna ---------- */
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.member-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+
+.auth{
+  border:none;
+  box-shadow:0 24px 60px #4a1f6e33;
+}
+
+.auth > :last-child{
+  background:linear-gradient(170deg, #f1e7fb 0%, #fff6d9 100%);
+  border-top:5px solid #f5b800;
+}
