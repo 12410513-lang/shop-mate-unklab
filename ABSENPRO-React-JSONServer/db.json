@@ -1,0 +1,268 @@
+{
+  "employees": [
+    {
+      "id": "EMP001",
+      "name": "Aditya Pratama",
+      "role": "Software Engineer",
+      "department": "IT & Digital",
+      "email": "aditya@perusahaan.id",
+      "phone": "081234567801",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP002",
+      "name": "Nadia Putri",
+      "role": "HR Specialist",
+      "department": "Human Capital",
+      "email": "nadia@perusahaan.id",
+      "phone": "081234567802",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP003",
+      "name": "Rizky Saputra",
+      "role": "Finance Officer",
+      "department": "Finance",
+      "email": "rizky@perusahaan.id",
+      "phone": "081234567803",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP004",
+      "name": "Clara Wijaya",
+      "role": "Marketing Lead",
+      "department": "Marketing",
+      "email": "clara@perusahaan.id",
+      "phone": "081234567804",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP005",
+      "name": "Bima Santoso",
+      "role": "Operations Staff",
+      "department": "Operations",
+      "email": "bima@perusahaan.id",
+      "phone": "081234567805",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP006",
+      "name": "Sarah Lestari",
+      "role": "UI/UX Designer",
+      "department": "IT & Digital",
+      "email": "sarah@perusahaan.id",
+      "phone": "081234567806",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP007",
+      "name": "Fajar Ramadhan",
+      "role": "Sales Executive",
+      "department": "Sales",
+      "email": "fajar@perusahaan.id",
+      "phone": "081234567807",
+      "status": "Aktif"
+    },
+    {
+      "id": "EMP008",
+      "name": "Maya Anggraini",
+      "role": "Recruiter",
+      "department": "Human Capital",
+      "email": "maya@perusahaan.id",
+      "phone": "081234567808",
+      "status": "Cuti"
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "employeeId": "EMP001",
+      "date": "2026-11-08",
+      "checkIn": "08:02",
+      "checkOut": "17:05",
+      "status": "Hadir",
+      "note": ""
+    },
+    {
+      "id": 2,
+      "employeeId": "EMP002",
+      "date": "2026-11-08",
+      "checkIn": "08:17",
+      "checkOut": "17:00",
+      "status": "Terlambat",
+      "note": "Kendala perjalanan"
+    },
+    {
+      "id": 3,
+      "employeeId": "EMP003",
+      "date": "2026-11-08",
+      "checkIn": "07:55",
+      "checkOut": "17:10",
+      "status": "Hadir",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "employeeId": "EMP004",
+      "date": "2026-11-08",
+      "checkIn": "-",
+      "checkOut": "-",
+      "status": "Izin",
+      "note": "Keperluan keluarga"
+    },
+    {
+      "id": 5,
+      "employeeId": "EMP005",
+      "date": "2026-11-08",
+      "checkIn": "08:05",
+      "checkOut": "-",
+      "status": "Hadir",
+      "note": ""
+    },
+    {
+      "id": 6,
+      "employeeId": "EMP006",
+      "date": "2026-11-08",
+      "checkIn": "-",
+      "checkOut": "-",
+      "status": "Sakit",
+      "note": "Surat dokter"
+    },
+    {
+      "id": 7,
+      "employeeId": "EMP007",
+      "date": "2026-11-08",
+      "checkIn": "07:58",
+      "checkOut": "17:02",
+      "status": "Hadir",
+      "note": ""
+    },
+    {
+      "id": 8,
+      "employeeId": "EMP008",
+      "date": "2026-11-08",
+      "checkIn": "-",
+      "checkOut": "-",
+      "status": "Cuti",
+      "note": "Cuti tahunan"
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": 1,
+      "employeeId": "EMP004",
+      "type": "Izin",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "reason": "Keperluan keluarga",
+      "status": "Approved",
+      "submittedAt": "2026-11-08",
+      "createdAt": "2026-11-08T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "employeeId": "EMP006",
+      "type": "Sakit",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-09",
+      "reason": "Demam dan perlu istirahat",
+      "status": "Pending",
+      "submittedAt": "2026-11-08",
+      "createdAt": "2026-11-08T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "employeeId": "EMP008",
+      "type": "Cuti",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-10",
+      "reason": "Keperluan pribadi",
+      "status": "Approved",
+      "submittedAt": "2026-11-08",
+      "createdAt": "2026-11-08T00:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "USR001",
+      "name": "Admin ABSENPRO",
+      "email": "admin@absenpro.id",
+      "password": "admin123",
+      "role": "admin",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR002",
+      "name": "Aditya Pratama",
+      "email": "aditya@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP001",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR003",
+      "name": "Nadia Putri",
+      "email": "nadia@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP002",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR004",
+      "name": "Rizky Saputra",
+      "email": "rizky@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP003",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR005",
+      "name": "Clara Wijaya",
+      "email": "clara@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP004",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR006",
+      "name": "Bima Santoso",
+      "email": "bima@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP005",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR007",
+      "name": "Sarah Lestari",
+      "email": "sarah@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP006",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR008",
+      "name": "Fajar Ramadhan",
+      "email": "fajar@perusahaan.id",
+      "password": "user123",
+      "employeeId": "EMP007",
+      "role": "user",
+      "status": "Aktif"
+    },
+    {
+      "id": "USR009",
+      "name": "Maya Anggraini",
+      "email": "maya@perusahaan.id",
+      "password": "user123",
+      "role": "user",
+      "employeeId": "EMP008",
+      "status": "Cuti"
+    }
+  ],
+  "holidays": []
+}
